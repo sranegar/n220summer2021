@@ -14,10 +14,12 @@ function draw() {
     if(mouseX > 200) {
         fill (255,0,0);
     } 
+
+       // draw circle blue on left half of canvas
     if (mouseX < 200) {
         fill (0,0,255);
     }
-     // draw circle blue on left half of canvas
+  
 
 
 
