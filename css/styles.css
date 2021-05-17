@@ -1,0 +1,32 @@
+h1 {
+  color: rgb(66, 192, 209);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: rgb(204, 106, 199);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(169, 130, 206);
+}
+
+a:hover {
+  color: aqua;
+}
+
+a:active {
+  color: slateblue;
+}
