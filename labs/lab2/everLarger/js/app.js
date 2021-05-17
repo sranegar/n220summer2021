@@ -8,6 +8,7 @@ function setup() {
 function draw() {
     fill(230, 142, 214);
     circle(650,300,d); //circle in center of screen with diameter of 1
+    noStroke();
 
     d = d + 1; // increase diameter by 1 every update frame 
 
