@@ -12,6 +12,7 @@ function draw() {
     d = d + 1; // increase diameter by 1 every update frame 
 
     if(d >= 200) { //stopping circle from exceeding 200
+        clear(); // clears frames per second
         d = 1; //setting circle back to 1
     }
 }
