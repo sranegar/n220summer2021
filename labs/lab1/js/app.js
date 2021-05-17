@@ -1,16 +1,16 @@
 function setup() {
-    var red = "#de2846"
-    let defaultWeight = 2
+    var red = "#de2846";
+    let defaultWeight = 2;
 
     // <!-- my attempt at creating a moogle -->
 
     createCanvas(800,600);
-    background("#EAE18F")
+    background("#EAE18F");
 
     // red ball on top of head
 
     strokeWeight(defaultWeight);
-    noStroke()
+    noStroke();
     fill(red);
     circle(50,30,20);
 
@@ -48,8 +48,8 @@ function setup() {
 
     // moogle nose!
 
-    fill(red)
-    noStroke()
+    fill(red);
+    noStroke();
     circle(150,220,50);
 
 
