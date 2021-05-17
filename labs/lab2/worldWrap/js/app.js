@@ -8,17 +8,15 @@ function setup () {
 function draw() {
     
     background(0);
-    fill (0,255,0);
+    fill (0,180,0);
 
-    // let ball move to the right 5 px per frame
+    xPos = xPos + 5;  // move ball to the right 5 px per frame
 
-    xPos = xPos + 5;
 
-    // move ball back to far left of screen
-
-    if(xPos >= 800) {
-        xPos = yPos - 5; 
+    if(xPos >= 800) { // ball cannot exceed 800px
+        xPos = yPos - 5; // move ball back to far left of screen
     } 
 
-    circle(xPos,200,30);
+    circle(xPos,300,50);
 }
+
