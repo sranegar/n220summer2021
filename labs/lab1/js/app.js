@@ -23,15 +23,15 @@ function setup() {
     // rectangle moogle wings because triangles are too hard
 
     strokeWeight(defaultWeight);
-    fill("#6F50C7")
-    rect(12,130,280,100)
+    fill("#6F50C7");
+    rect(12,130,280,100);
 
     
     // ears come first because they are layered behind the face
 
     strokeWeight(defaultWeight);
-    fill("#F4EFEF")
-    stroke("black")
+    fill("#F4EFEF");
+    stroke("black");
     circle(100,140,50);
     circle(200,140,50);
 
