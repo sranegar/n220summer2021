@@ -7,18 +7,19 @@ function setup() {
     createCanvas(800,600);
     background("#EAE18F");
 
-    // red ball on top of head
-
-    strokeWeight(defaultWeight);
-    noStroke();
-    fill(red);
-    circle(50,30,20);
 
     // Line connecting red ball to head
 
     stroke(1);
     strokeWeight (2);
     line(220, 220, 60, 40,);
+
+    // red ball on top of head
+
+    strokeWeight(defaultWeight);
+    noStroke();
+    fill(red);
+    circle(50,30,20);
 
     // rectangle moogle wings because triangles are too hard
 
