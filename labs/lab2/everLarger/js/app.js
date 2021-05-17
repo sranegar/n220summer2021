@@ -1,21 +1,17 @@
-var radius = 40;
-var x = -radius;
-var speed = 0.5;
+let d = 1;
 
 function setup() {
-    createCanvas(240,120);
-    ellipseMode(radius);
+    createCanvas(1920,1080);
+    d = d + 1;
 }
  
 function draw() {
-    background(0);
-    x += speed; 
-    if (x > width+radius) {
-        x = -radius;
-    }
-    arc(x, 60, radius, radius, 0.52, 5.76);
-}
+    fill(230, 142, 214);
+    circle(650,300,d); //circle in center of screen with diameter of 1
 
-//draw circle in center of screen with diameter of 1
-//use global veriable to increase diameter of circle by 1 every update frame
-//once circle gets to 200, set back to 1
+    d = d + 1; // increase diameter by 1 every update frame 
+
+    if(d >= 200) { //stopping circle from exceeding 200
+        d = 1; //setting circle back to 1
+    }
+}
