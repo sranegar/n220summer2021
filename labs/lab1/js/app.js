@@ -7,6 +7,13 @@ function setup() {
     createCanvas(800,600);
     background("#EAE18F")
 
+    // red ball on top of head
+
+    strokeWeight(defaultWeight);
+    noStroke()
+    fill(red);
+    circle(50,30,20);
+
     // Line connecting red ball to head
 
     stroke(1);
@@ -18,13 +25,6 @@ function setup() {
     strokeWeight(defaultWeight);
     fill("#6F50C7")
     rect(12,130,280,100)
-
-    // red ball on top of head
-
-    strokeWeight(defaultWeight);
-    noStroke()
-    fill(red);
-    circle(50,30,20);
 
     
     // ears come first because they are layered behind the face
