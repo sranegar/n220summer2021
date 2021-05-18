@@ -6,6 +6,7 @@ function setup() {
 }
 
 function draw() {
+    background(0);
 
     circle(mouseX,mouseY,30);  // draw circle where mouse is at 
 
