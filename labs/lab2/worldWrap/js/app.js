@@ -13,7 +13,7 @@ function draw() {
     xPos = xPos + 5;  // move ball to the right 5 px per frame
 
 
-    if(xPos >= 800) { // ball cannot exceed 800px
+    if(xPos >= 800) { // if ball is 800px or greater
         xPos = yPos - 5; // move ball back to far left of screen
     } 
 
