@@ -7,20 +7,15 @@ function setup() {
 
 function draw() {
 
-    // draw circle where mouse is at 
-    circle(mouseX,mouseY,30);
+    circle(mouseX,mouseY,30);  // draw circle where mouse is at 
 
-     // draw circle red on right half of canvas
-    if(mouseX > 200) {
-        fill (255,0,0);
+    if(mouseX > 200) {  // if circle is on the right side of canvas
+        fill (255,0,0); // draw circle red
     } 
 
-       // draw circle blue on left half of canvas
-    if (mouseX < 200) {
-        fill (0,0,255);
+    
+    if (mouseX < 200) { //if circle is on left side of canvas
+        fill (0,0,255); //draw circle blue
     }
   
-
-
-
 }
