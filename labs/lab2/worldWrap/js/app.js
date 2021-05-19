@@ -8,7 +8,7 @@ function setup () {
 function draw() {
     
     background(0);
-    fill (0,180,0);
+    fill (157, 237, 237);
 
     xPos = xPos + 5;  // move ball to the right 5 px per frame
 
