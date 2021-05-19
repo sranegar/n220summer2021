@@ -16,6 +16,7 @@ p a {
 
 a:link {
   text-decoration: none;
+  color: rgb(169, 130, 206);
 }
 
 a:visited {
