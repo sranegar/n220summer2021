@@ -1,21 +1,31 @@
-let xPositions = [];
+let dObj = {x:200, y:0, velocityY: 5}
+yPositions = [10];
+let gravity = .2;
 
-function setup() {
-    createCanvas (600,300);
-    fill (195, 124, 217)
+function setup () {
+    createCanvas(400,400);
 }
 
-function draw() {
-
+function draw () {
     background(0);
+    fill (191, 255, 255);
 
-    if(xPositions.length > 10) {
-        xPositions.shift();
-        // console.log(xPositions);
+    // for(var i = 0; i < yPosition.length; i++) {
+    //     circle(dObj.x, dObj.y, 10);
+    //     dObj.y += dObj.velocityY;
+    //     dObj.velocityY += gravity;
+    // }
+
+    circle(dObj.x, dObj.y, 10);
+    dObj.y += dObj.velocityY;
+    dObj.velocityY += gravity;
+
+    if(yPositions > 10) {
+        circle(dObj.x, dObj.y, 10);
     }
 
-    xPositions.push(mouseX);
-    for(var i = 0; i < xPositions.length; i++) {
-        circle(xPositions[i], 150, i*3);
-    }
+    // for(var i = 0; i > yPositions; i++) { 
+    //     circle(dObj.x, yPositions[i], 10); 
+        
+    // }
 }
