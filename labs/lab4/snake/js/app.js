@@ -3,7 +3,7 @@ let yPositions = []; //Position of mouse on y-axis array
 
 function setup() {
     createCanvas (600,300);
-    fill (195, 124, 217)
+    fill (195, 124, 217);
 }
 
 function draw() {
