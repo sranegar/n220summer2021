@@ -22,7 +22,7 @@ function draw() {
     yPositions.push(mouseY); //Add new element at the end of array at position of mouse on y axis
 
     for(var i = 0; i < 10; i++) { //Circles increase by one until it reaches 10 circles
-        circle(xPositions[i], yPositions[i], 20); //X and Y position of circle inrease by one until it reaches 10 
+        circle(xPositions[i], yPositions[i], 20); //X and Y position of circle increase by one until it reaches 10 
     }
 }
 
