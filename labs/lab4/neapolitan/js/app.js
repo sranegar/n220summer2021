@@ -11,6 +11,7 @@ function setup () {
     }
 }
 
+
 //Create an array with strings
 //Array has three different colors
 //Use a loop to create a rectangle for each color horizontially across the page
