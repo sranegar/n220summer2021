@@ -1,13 +1,13 @@
 let dvGreen= document.getElementById("green"); //call ID to style div
 let size = 100; //set size to 100
-let bigger = 1.1;
+let makeBigger = 1.1; //set variable increase to 1.1 
 
 dvGreen.style.backgroundColor = "#96f2ae"; 
 dvGreen.style.width = size + "px"; //set div's width
 dvGreen.style.height = size + "px"; //set div's height
 
-function increaseSize () { // Funtion for when div is clicked
-      size = size * bigger; //size variable increases by 10%
+function increaseSize () { // Function for when div is clicked
+      size = size * makeBigger; //size variable increases by 10%
       dvGreen.style.width = size + "px"; //set new width
       dvGreen.style.height = size + "px";  //set new height
 }
