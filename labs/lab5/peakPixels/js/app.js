@@ -1,30 +1,21 @@
-let dvGreen= document.getElementById("green");
-let height = 100;
-height = height + 60;
-let width = 100;
-width = width + 60;
-
+let dvGreen= document.getElementById("green"); //call ID to style div
+let size = 100; //set size to 100
+let bigger = 1.1;
 
 dvGreen.style.backgroundColor = "#96f2ae"; 
-dvGreen.style.width = width + "px";
-dvGreen.style.height = height + "px";
+dvGreen.style.width = size + "px"; //set div's width
+dvGreen.style.height = size + "px"; //set div's height
 
-function increaseSize () {
-      dvGreen.style.width = width + ".1px";
-      dvGreen.style.height = height + ".1px";
-      if(height == width) dvGreen.style.width
-      if (height == width)
-      dvGreen.style.height
-      
-      dvGreen.style.backgroundColor = "#F5021E";
+function increaseSize () { // Funtion for when div is clicked
+      size = size * bigger; //size variable increases by 10%
+      dvGreen.style.width = size + "px"; //set new width
+      dvGreen.style.height = size + "px";  //set new height
 }
 
+// Make the div
+// make a variable for size, set to 100
+//set the div's size to that (dvRef.style.width = size +"px";, same for height)
 
-
-
-
-
-
-//100x100 square div in green
-//when clicked, increases by 10% each time
-//make variable to store height and width
+// When the div is clicked..
+   // set the size variable to 10% bigger (hint, multiply by 1.1)
+   //Set the div's size to the new, calculated size (same as in setup)
