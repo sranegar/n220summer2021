@@ -4,7 +4,7 @@ let myTamagochi = { //Assign object for pet
     happiness: 60, //Give starting happiness level
 }
 
-//Get ID so it's able to be styled 
+//Get ID so it's able to be styled in js
 
 let statDiv = document.getElementById("displayStats")
 
@@ -33,3 +33,7 @@ function playPet () {
     console.log(myTamagochi.happiness); //Check in console log to make sure program is working
     statDiv.innerHTML = `<h1>${name}</h1><p>${myTamagochi.happiness}</p>`; //Display name and happiness level on page
 } 
+
+function reset () {
+    statDiv.innerHTML = reset;
+}
