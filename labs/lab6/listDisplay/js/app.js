@@ -3,7 +3,7 @@
 let musics = [ //Assign three properties to each object
     { genre: "Funk", artist: "Parliment", album: "Mothership Connection"}, 
     { genre: "Rock", artist: "Umphrey's Mcgee", album: "Anchor Drops"},
-    { genre: "Bluegrass", artist: "Grateful Dawg", album: "Jerry Garcia & David Grisman"}
+    { genre: "Bluegrass", artist: "Grateful Dawg", album: "Garcia & Grisman"}
 ]
 
 let dvBox = document.getElementsByClassName("box") //Pull class in order to style in js
