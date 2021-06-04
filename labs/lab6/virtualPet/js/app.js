@@ -24,6 +24,7 @@ function feedPet () {
     statDiv.innerHTML = `<h1>${name}</h1><p>${myTamagochi.energy}</p>`; //Display name and energy level on page
 }
 
+
 //Give function to "Play with Pet" button
 
 function playPet () {
