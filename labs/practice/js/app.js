@@ -1,18 +1,30 @@
-//Create collection for topic: music 
+let lyrics = ["Blue", "Canary", "In", "The", "Outlet"] //Create an array of lyrics for each word
 
-let musics = [ //Assign three properties to each object
-    { genre: "Funk", artist: "Parliment", album: "Mothership Connection"}, 
-    { genre: "Rock", artist: "Umphrey's Mcgee", album: "Anchor Drops"},
-    { genre: "Bluegrass", artist: "Grateful Dawg", album: "Jerry Garcia & David Grisman"}
-]
-
-let dvBox = document.getElementsByClassName("box") //Pull class in order to style in js
+let lyricsDiv = document.getElementByID("display") //Pull div 
 
 
-//Create a loop through the elements 
-    for (var i = 0; i < dvBox.length; i++) {   //Loop cannot exceed 3
-        let genre = musics[i].genre; 
-        let artist = musics[i].artist;
-        let album = musics[i].album; 
-        dvBox[i].innerHTML = `<h1>${genre}</h1><h2>${artist}</h2><p>${album}</p>`; //Display information for each object in each div on page
+
+function Forward() { //Create function for foward button
+   
 }
+
+//Create function for backward button
+//What are the variables
+//How are they changing
+//What variables denote foward
+//How do I move foward
+//How do I change those variables over time
+//Think global variable
+
+
+//Create a for loop to display each word 
+
+
+
+
+
+//display one lyric at a time inside div element
+//button forwards
+//button backwards
+//when going backwards, display last lyric
+//when going forwards, display first lyric
