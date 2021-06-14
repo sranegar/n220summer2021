@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box {
+        .txtBox {
             height: 50px;
-            width: 150px;
-            border: 1px solid black;
-
+            width: 250px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            color: rgb(235, 102, 202);
         }
     </style>
 </head>
 <body>
     
-
-    <div id="display" class="box"></div>
-    <button onclick="Forward()">Forward</button>
-    <button onclick="Backward()">Backward</button>
-
+    <div class= "txtBox" id="dvOutput"></div> 
+    <input id="number"/> <!-- create input -->
+    <br/>
+    <button onclick="divideBySeven()">Divisble by Seven?</button> 
     <script src="js/app.js"></script>
 </body>
 </html>
