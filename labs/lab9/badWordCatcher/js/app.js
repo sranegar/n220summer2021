@@ -17,8 +17,8 @@ function badWordCatch () {
        if (string.includes(badWordArray[i])) { //if input array contains any of the strings from the badword array
             sum = sum + 1;  //add one per string
             txtBox.innerHTML = "Bad word(s) found: " + sum; //display in output 
-            document.getElementById('insertTxt').value = '';
-        } 
+            document.getElementById('insertTxt').value = ''; //clears input field
+        }
     }
 
     console.log(sum)
