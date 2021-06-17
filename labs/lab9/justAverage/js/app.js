@@ -10,8 +10,8 @@ function breakString() {
 
     let sum = 0; 
 
-   for (var i = 0; i < splitNumbers.length; i++) { // Loops through the array and sums up the values
-        sum += Number(splitNumbers[i]); // Converts the string version of the numbers into number versions
+   for (var i = 0; i < splitNumbers.length; i++) { // Loops through the array 
+        sum += Number(splitNumbers[i]); // Sums up the values in array. Converts the string version of the numbers into number versions
    }
 
    let average = sum / splitNumbers.length;  // Calculates the average of the array

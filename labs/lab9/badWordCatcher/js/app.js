@@ -1,39 +1,25 @@
 let txtBox = document.getElementById ("dvOutput");
 let insertTxt = document.getElementById ("insertTxt");
 
-
-// let badWords = [ "clear", "water", "tires" ];
-
 let sum = 0
-let x = "water"; 
-let y = "clear";
-let z = "tires";
+
+let badWordArray = ["water", "clear", "tires"]
+
 
 function badWordCatch () {
 
-    let badWords = insertTxt.value;
-    let splitString = badWords.split(" ");
+    let string = insertTxt.value;
+    console.log(string);
+    let splitString = string.split(" ");
     console.log(splitString);
 
-    if (badWords == x, y || z) {
-        sum = sum + 1;
+    for (var i = 0; i < string.length; i++) {
+       if (string.includes(badWordArray[i])) {
+            sum = sum + 1;
+            txtBox.innerHTML = "Bad word(s) found: " + sum;
+        } 
     }
 
     console.log(sum)
-
-    // if (badWords == catcherSecond) {
-    //     sum = sum + 1;
-    // }
-
-    // if (badWords == catcherThird) {
-    //     sum = sum + 1;
-    // }
-
-    // console.log(sum)
-
-    // var element = badWords.find(function (item) {
-    //      return item == "clear";
-    // })
-    // console.log(element);
 }
 
