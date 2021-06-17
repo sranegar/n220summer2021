@@ -12,7 +12,7 @@ function breakString() {
 
    for (var i = 0; i < splitNumbers.length; i++) { // Loops through the array 
         sum += Number(splitNumbers[i]); // Sums up the values in array. Converts the string version of the numbers into number versions
-        document.getElementById('insertTxt').value = '';
+        document.getElementById('insertTxt').value = ''; //clear input field
    }
 
    let average = sum / splitNumbers.length;  // Calculates the average of the array
