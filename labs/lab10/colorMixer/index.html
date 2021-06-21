@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            height: 300px;
+            width: 300px;
+            background-color: black;
+        }
+        .buttons {
+            background-color: gray;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: bold;
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+            width: 50px;
+        }
+
+        .wrapper1 {
+            display: flex;
+        }
+
+        .wrapper2 {
+            display: flex;
+        }
+
+        .wrapper3 {
+            display: flex;
+        }
+
+        .dvBox {
+            margin-top: 15px;
+            width: 300px;
+            height: 20px;
+            border: 1px solid rgb(0,0,0);
+        }
+        
+        .changeColor {
+            background-color: rgb(136, 108, 168);
+            border: 1px solid black;
+            width: 100px;
+            text-align: center;
+            padding: 3px;
+            color: white;
+            margin-left: 90px;
+            margin-top: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="div" onclick="divClicked(event)"></div>
+    <div class="dvBox" id="dvBox" onclick="changeValue(event)"></div>
+    <!-- <div id = "dvChangeColor" class="changeColor" onclick="divClicked(event)">Change Color</div> -->
+    <div class="wrapper1">
+    <p>Red</p>
+    <div id = "count" class="buttons" onclick="plusOne(event)" data-response="rgb(0,0,0)">+1</div>
+    <div class="buttons" onclick="changeValue(event)" data-response2="add five">+5</div>
+    <div class="buttons" onclick="changeValue(event)" data-response3="add-ten">+10</div>
+</div>
+<div class="wrapper2">
+    <p>Green</p>
+    <div class="buttons" onclick="plusOne1()">+1</div>
+    <div class="buttons" onclick="changeValue(event)">+5</div>
+    <div class="buttons" onclick="changeValue(event)">+10</div>
+</div>
+<div class="wrapper3">
+    <p>Blue</p>
+    <div class="buttons" onclick="plusOne2()">+1</div>
+    <div class="buttons" onclick="changeValue(event)">+5</div>
+    <div class="buttons" onclick="changeValue(event)">+10</div>
+</div>
+    <script src="js/app.js"></script>
+</body>
+</html>
