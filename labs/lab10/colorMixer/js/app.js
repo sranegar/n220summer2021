@@ -6,17 +6,17 @@ x = 0
 y = 0
 z = 0
 
-function plusOne() {
+function plusOne() { //add one 
     x++;
     console.log(x);
 }
 
-function plusOne1() {
+function plusOne1() { //add one
     y++;
     console.log(y);
 }
 
-function plusOne2() {
+function plusOne2() { //ad one
     z++;
     console.log(z);
 }
@@ -28,6 +28,10 @@ let response = event.target.getAttribute  ("data-response"); //set variable for 
 element.innerHTML = response;
 } //on click, change each div to set color of attribute
 
+//create functions to add by one, five and ten
+//when button is pressed, add to hexidecimal value
+//display rgb in div
+//color value of square div should recieve the added hexidecimals
 
 
 
