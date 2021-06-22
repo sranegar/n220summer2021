@@ -2,7 +2,7 @@ function setup() {
     createCanvas (320,320);
 }
 
-function draw() {
+function draw() { //Create canvas for hangman to be drawn on
     background(0, 255, 255);
     stroke(10);
     line(300,300, 0, 300);
@@ -10,7 +10,7 @@ function draw() {
     line(150, 0, 150, 90);
 }
 
-var B
+var B //set variables
     ,L
     ,placeholder 
     ,correctGuesses
@@ -20,25 +20,31 @@ var B
     ,words=[]
     ,wrongletter=true;
 
-    function drawBody() {
-        circle(150,100,30)
-    }
+    function chooseWord() //function for choosing a wood from an array at random
+{
+	//create an array of ten words
+	var words=["hello","stephanie", "kittens", "rain", "music", "unicorn", "cheese", "bears", "pink", "rainbow"];
+	//choose a word at random to play hangman
+	return words[parseInt(Math.random()*words.length)];
+}
 
-    function newGame()
+
+
+    function newGame() //Function for button that displays keyboard 
     {
       //initialize all the variables
-      placeholder=[];  /////////initialize placeholder as an array\\\\\\\\\\\
-      correctGuesses=0;
+      placeholder=[];  //placeholder as array
+      correctGuesses=0; 
       wrongGuesses=0;
-      wordToGuess=chooseWord();
-      wordLength=wordToGuess.length;
+      wordToGuess=chooseWord(); //word to guess = array of words
+      wordLength=wordToGuess.length; 
       
-      //make a loop that replaces underscores with the word to be guessed
+      // loop that replaces underscores with the letters that are guessed correctly
       for(var i=0;i<wordLength;i++)
       {
-      	placeholder[i] = "_ ";  /////////instead of concatinating string add '_' to placeholder array\\\\\\\\\\\
+      	placeholder[i] = "_ ";  //instead of concatinating string add underscore to placeholder array
       }
-       document.getElementById("keyboard").innerHTML=placeholder.join("");
+       document.getElementById("keyboard"). innerHTML=placeholder.join(""); //display keyboard and join letters as they are guessed correctly
       
       //loop to make a keyboard of buttons 
       //B hold the buttons
@@ -51,52 +57,62 @@ var B
       B += '<button id="'+L+'" onclick="getLetter(\''+L+'\');">' + L + '</button>';  /////////button id should be unique. So give each button with letter as id \\\\\\\\\\\
     }
     document.getElementById("box1").innerHTML = B;
-        // drawBody ()
+    
+    
     }
     
-    
-    function getLetter(x)
+     function getLetter(x)
     {
-       document.getElementById(x).disabled = true;  /////////disable button that clicked\\\\\\\\\\\
-       checkLetter(x);
+       document.getElementById(x).disabled = true;  //disable button so user knows it has been chosen
+       checkLetter(x); //call function 
     }
     function checkLetter(letter)
     {
-      wrongletter=true;
+      wrongletter=true; 
     	document.getElementById("keyboard").innerHTML=placeholder;
-//        placeholder=placeholder.split(""); /////////no need this since the placeholder is now an array\\\\\\\\\\\
               for(var i=0;i<wordLength;i++)
           { 
           	if(wordToGuess.charAt(i)===letter.toLowerCase())
           	{
-               placeholder[i]=letter;
-               wrongletter=false;
-               correctGuesses++;
+               placeholder[i]=letter; //replace "_" with letter
+               wrongletter=false; //wrong letter does not display
+               correctGuesses++; //allow user to keep selecting letters
           	}
-          	if(correctGuesses===wordLength)
+          	if(correctGuesses===wordLength) //if user guesses the word before hangman is drawn
           	{
-          		//if all letters have been guessed that mean u guessed all the correct letters and u win
-          		//call the drawCanvas
-          		//drawCanvas();
+          		let dvWin = document. getElementById ("youWin")
+                  dvWin.innerHTML = "You Win!" //display "You Win!" on screen
     
-          	}
+          	} 
           }
-          	//if ur guess was wrong
-    	if(wrongletter)  /////////I think you mistakenly gave the variable name here\\\\\\\\\\\
+          	//if user selects wrong letter
+    	if(wrongletter) 
     	{
-    		wrongGuesses++; 
-            circle(150,100,30);
+    		wrongGuesses++; //allow user to keep guessing letters
+            // drawHangman() //but draw first bodypart of hangman
+            //     circle(20,20,30) //draw head
+           
         
     	} 
-    	document.getElementById("keyboard").innerHTML=placeholder.join("");
+    	document.getElementById("keyboard"). innerHTML=placeholder.join("");//display letters that are guessed correctly from the keyboard
         
       
     }
-function chooseWord()
-{
-	//create an array of ten words
-	var words=["hello","stephanie", "kittens", "rain", "music", "unicorn", "cheese", "bears", "pink", "rainbow"];
-	//choose a word at random to play hangman
-	return words[parseInt(Math.random()*words.length)];
-}
+
+  
+
+ //build a keyboard for each letter of the alphabet
+//create an array of ten different words
+//choose a random word from the array at the beginning of each new game
+//create placeholders “_” for each letter of the word
+//when a letter is pressed, check through the random chosen word to see if any of the letters match
+//if the letter matches, replace the placeholder with that letter
+//if letter does not match, draw body part on the canvas
+//function that draws out the hangman 
+ 	//circle
+	//line x 5
+//if user guesses word before 6 body parts are drawn
+//display “YOU WIN” 
+//If all 6 body parts are drawn before user guesses word
+//display “YOU LOSE”  
 
