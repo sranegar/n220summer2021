@@ -54,7 +54,7 @@ var B //set variables
     //this loop to get the letters by charcode
     for (var i = 65; 90 >= i; i++) {// A-65, Z-90
       L = String.fromCharCode(i);
-      B += '<button id="'+L+'" onclick="getLetter(\''+L+'\');">' + L + '</button>';  /////////button id should be unique. So give each button with letter as id \\\\\\\\\\\
+      B += '<button id="'+L+'" onclick="getLetter(\''+L+'\');">' + L + '</button>';  //Give button with letter as id
     }
     document.getElementById("box1").innerHTML = B;
     
@@ -68,11 +68,11 @@ var B //set variables
     }
     function checkLetter(letter)
     {
-      wrongletter=true; 
+      wrongletter=true; //if letter is not in the string
     	document.getElementById("keyboard").innerHTML=placeholder;
-              for(var i=0;i<wordLength;i++)
+              for(var i=0;i<wordLength;i++) //loop through length of word from string 
           { 
-          	if(wordToGuess.charAt(i)===letter.toLowerCase())
+          	if(wordToGuess.charAt(i)===letter.toLowerCase()) //check letters to see if they equal to any of the letters in teh string. If yes..
           	{
                placeholder[i]=letter; //replace "_" with letter
                wrongletter=false; //wrong letter does not display
@@ -91,6 +91,7 @@ var B //set variables
     		wrongGuesses++; //allow user to keep guessing letters
             // drawHangman() //but draw first bodypart of hangman
             //     circle(20,20,30) //draw head
+            // this is where I would put the line the body, arms and legs if I could get it to work. This is where I am struggling most. 
            
         
     	} 
@@ -98,6 +99,7 @@ var B //set variables
         
       
     }
+
 
   
 
