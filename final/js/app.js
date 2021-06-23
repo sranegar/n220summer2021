@@ -8,6 +8,13 @@ function draw() { //Create canvas for hangman to be drawn on
     line(300,300, 0, 300);
     line(300, 0, 300, 300);
     line(150, 0, 150, 90);
+//attempt for drawing body of hangman
+    // for (var i = 0; i < wordLength; i++) {
+    //     wrongGuesses==wordLength {
+    //         circle(30,30,30)
+    //     }
+    // }
+    
 }
 
 var B //set variables
@@ -25,7 +32,7 @@ var B //set variables
 	//create an array of ten words
 	var words=["hello","stephanie", "kittens", "rain", "music", "unicorn", "cheese", "bears", "pink", "rainbow"];
 	//choose a word at random to play hangman
-	return words[parseInt(Math.random()*words.length)];
+	return words[parseInt(Math.random()*words.length)]; //Return word at random 
 }
 
 
