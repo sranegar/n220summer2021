@@ -8,19 +8,19 @@
     <style>
         .txtBox {
             height: 150px;
-            width: 250px;
+            width: 220px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 20px;
-            color: rgb(235, 102, 202);
+            color: #520e21;
         }
     </style>
 </head>
 <body>
-    
+    <h3>Gratitude calculator:</h3>
     <div class= "txtBox" id="dvOutput"></div> <!-- create output -->
-    <input id="billTotal"/> <!-- create input -->
+    <input id="billTotal" placeholder="Insert bill amount" style="width: 207px"/> <!-- create input -->
     <br/>
-    <button onclick="generateTotalBill()">Generate Full Amount</button> <!-- create button -->
+    <button onclick="generateTotalBill()" style="margin-top: 8px;">Generate Full Amount</button> <!-- create button -->
     <script src="js/app.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@ function setup() {
 }
  
 function draw() {
-    fill(230, 142, 214);
+    fill(182, 48, 86);
     noStroke();
     circle(650,300,d); //circle in center of screen with diameter of 1
 

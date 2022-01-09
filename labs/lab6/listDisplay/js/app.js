@@ -16,6 +16,6 @@ let dvBox = document.getElementsByClassName("box") //Pull class in order to styl
         let album = musics[i].album; 
         dvBox[i].innerHTML = `<h1>${genre}</h1><h2>${artist}</h2><p>${album}</p>`; //Display information for each object in each div on page
         if (musics[0].genre != 1) { //If 0 array does not equal 1 (true)
-            dvBox[0].style.backgroundColor = "#96f2ae"; //Change background color of div to green
+            dvBox[0].style.backgroundColor = "#b63056"; //Change background color of div to green
         }
 }

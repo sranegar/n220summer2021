@@ -18,8 +18,8 @@ function draw () {
     //Create object
     noStroke(); //No stroke on rect
 
-    background(115, 234, 255); //Light blue background
-    fill(myObject.color); //Dip brush in paint
+    background(26, 26, 23); //Light blue background
+    fill(243, 236, 120); //Dip brush in paint
     rect(myObject.x, myObject.y, myObject.width, myObject.height); //Create rect using object properties
 
     //Animate object

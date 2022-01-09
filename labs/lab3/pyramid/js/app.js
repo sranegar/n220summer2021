@@ -3,7 +3,7 @@ function setup() {
 }
 
 function draw() {
-    fill ("red"); //make red color
+    fill (182, 48, 86); //make red color
     noStroke (); //no stroke 
 
     for (var s = 0; s < 4; s++) {  //y axis (rects) cannot exceed 4
